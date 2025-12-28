@@ -107,6 +107,34 @@
        <button class="btn2" onclick="clearfeetToInches()">clear</button>  
     </div>
     </div>
-
 </body>
+<script>
+     function convertCmToInches() {
+        const cm = document.getElementById("num1").value;
+        const inches = cm / 2.54;
+         document.getElementById("cmResult").innerText = inches.toFixed(2) + " inches";
+    }
+    function clearcmtoinches() {
+            document.getElementById("num1").value = "";
+            document.getElementById("cmResult").innerText = "";
+        }
+        function convertrupeesToDollar() {
+            const rupees = document.getElementById("num2").value;
+            const dollars = rupees * 0.012;
+            document.getElementById("rupeesResult").innerText = dollars.toFixed(2) + " dollars";
+        }
+        function clearrupeesToDollar() {
+            document.getElementById("num2").value = "";
+            document.getElementById("rupeesResult").innerText = "";
+        }
+        function convertfeetToInches() {
+            const feet = document.getElementById("num3").value;
+            const inches = feet * 12;
+            document.getElementById("feetResult").innerText = inches.toFixed(2) + " inches";
+        }
+        function clearfeetToInches() {
+            document.getElementById("num3").value = "";
+            document.getElementById("feetResult").innerText = "";
+        }
+</script>
 </html>
